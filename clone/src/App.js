@@ -62,7 +62,7 @@ function App() {
           {chats.length === 0 ? (
             <h1 style={{ justifyItems:"center", fontSize:"50px", color: "white" }} className="txt">
               This is AlokGPT
-              <h6 style={{ fontSize:"20px" }}>Your Personal AI Assistant, Ready to Chat!</h6>
+              <h6 style={{ fontSize:"20px" }}>Your Personal AI Assistant,  Ready to Chat!</h6>
             </h1>
           ) : (
             chats.map((chat, index) => (
