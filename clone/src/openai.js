@@ -1,6 +1,6 @@
 export async function sendMsgToOpenAI(message) {
     try {
-        const response = await fetch("https://alokgpt.onrender.com", {
+        const response = await fetch("https://alokgpt.onrender.com/api/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -10,7 +10,7 @@ export async function sendMsgToOpenAI(message) {
         }); 
 
         if (!response.ok) {
-            throw new Error(`API Error: ${response.statusText}`);
+            throw new Error(`API a Error: ${response.statusText}`);
         }
 
         const resData = await response.json();
