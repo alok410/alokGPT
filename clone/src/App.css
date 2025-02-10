@@ -1,0 +1,170 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3E2A47;  /* Dark Brown Background */
+  color: #F0C8D8;  /* Light Pink */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top Navigation Bar */
+/* Top Navigation Bar */
+.topNavBar {
+  background: linear-gradient(135deg, #C5A3D4, #F2B5D4); /* Brown and Pink Gradient */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;   /* Makes the top bar sticky */
+  top: 0;             /* Stick it to the top of the page */
+  z-index: 1000;      /* Ensure it stays on top of other elements */
+}
+
+
+.upperSideTop {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3C233D;  /* Dark Purple */
+}
+
+.topNavLinks {
+  display: flex;
+}
+
+.topNavButton {
+  background-color: #3C233D;  /* Dark Purple */
+  color: #F0C8D8;  /* Dark Purple */
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 0 1rem;
+  border: 2px solid #3C233D;  /* Dark Purple Border */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topNavButton:hover {
+  border: 3px solid white
+}
+
+/* Main Chat Area */
+.mainChatArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+/* Chat Container */
+.chatContainer {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 1rem;
+}
+
+.chat {
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  background: #5C3C5E;  /* Dark Purple */
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat.bot {
+  background-color: #D9A1C4;  /* Light Pink */
+  color: #3C233D;
+}
+
+.chatImg {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.txt {
+  color: #F0C8D8;  /* Light Pink */
+}
+
+/* Chat Input Area */
+.chatFooter {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.chatInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3C233D;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.chatInput input {
+  width: 85%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #F0C8D8;  /* Light Pink */
+  background-color: #5C3C5E;  /* Dark Purple */
+  border: none;
+  border-radius: 1rem;
+}
+
+.chatInput input:focus {
+  outline: none;
+}
+
+.sendBtn {
+  background-color: #F2B5D4;  /* Soft Pink */
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+/* Scrollbar */
+.chatContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chatContainer::-webkit-scrollbar-track {
+  background: #3E2A47;  /* Dark Brown */
+}
+
+.chatContainer::-webkit-scrollbar-thumb {
+  background: #F2B5D4;  /* Soft Pink */
+  border-radius: 5px;
+}
